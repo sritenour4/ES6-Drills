@@ -28,12 +28,9 @@ let getFirstName = (fullName) => {
 getFirstName('Shannon Ritenour');
 
 // Create a second arrow function called getFirstNameConcise using the concise body syntax
-const fullName = 'Shannon Ritenour';
-const name = fullName.split(' ');
+let getFirstNameConcise = (fullName) => console.log(fullName.split(' ')[0]);
 
-let getFirstNameConcise = (fullName) => console.log(name[0]);
-
-getFirstNameConcise();
+getFirstNameConcise('Blake Ritenour');
 
 
 // Create a new function named doMath that will take in two parameters and return an object literal. 
@@ -67,7 +64,7 @@ function spreadArray(str) {
     let chars = [...str];
     // Using a for loop, loop through the spread string and console log each value of the string
     for(let i = 0; i < chars.length; i++) {
-        console.log(chars[[i]]);
+        console.log(chars[i]);
     }    
 }
 
